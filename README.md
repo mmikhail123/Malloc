@@ -26,6 +26,7 @@ In the makefile fill in the parameters that have <program> with your program nam
 
 ```
     all: <program>
+    
     <program>: <program>.o mymalloc.o
     $(CC) $(CFLAGS) $^ -o $@
 
