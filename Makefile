@@ -1,7 +1,7 @@
 CC     = gcc
 CFLAGS = -std=c99 -g -Wall -fsanitize=address,undefined
 
-all: memgrind testprograms
+all:  
 
 memgrind: memgrind.o mymalloc.o
 	$(CC) $(CFLAGS) $^ -o $@
