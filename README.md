@@ -22,7 +22,7 @@ It detects the following errors and prints out the error messages listed:
 
 To use in own programs: 
 In order to use this version of malloc, ensure that in the program you are using, include the mymalloc.h header file. 
-In the makefile, write:
+In the makefile fill in the parameters that have <program> with your program name. This is what is currently written in the makefile to edit:
 
 ```
     all: <program>
