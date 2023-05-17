@@ -19,3 +19,7 @@ It detects the following errors and prints out the error messages listed:
 
 - Freeing at an address that was not returned by malloc:
     “ERROR: File: filename: Line Number: line number: Address not a valid pointer from malloc!”
+
+To use in own programs: 
+In order to use this version of malloc, ensure that in the program you are using, include the mymalloc.h header file. 
+In the makefile, write 
