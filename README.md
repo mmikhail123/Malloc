@@ -22,4 +22,16 @@ It detects the following errors and prints out the error messages listed:
 
 To use in own programs: 
 In order to use this version of malloc, ensure that in the program you are using, include the mymalloc.h header file. 
-In the makefile, write 
+In the makefile, write:
+
+```
+    all: <program>
+    <program>: <program>.o mymalloc.o
+    $(CC) $(CFLAGS) $^ -o $@
+
+    <program>.o: <program>.c mymalloc.h
+    $(CC) -c $(CFLAGS) $< -o $@
+ ```
+
+                            
+
